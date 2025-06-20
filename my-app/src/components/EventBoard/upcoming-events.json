@@ -1,0 +1,82 @@
+[
+  {
+    "name": "San Siro",
+    "location": "Milano",
+    "speaker": "Jose Mourinho",
+    "type": "free",
+    "time": {
+      "start": "2025-07-13T14:30:00",
+      "end": "2025-07-13T18:00:00"
+    }
+  },
+  {
+    "name": "Camp Nou Vision 2040",
+    "location": "Barcelona",
+    "speaker": "Xavi Hernández",
+    "type": "vip",
+    "time": {
+      "start": "2025-07-14T10:00:00",
+      "end": "2025-07-14T13:00:00"
+    }
+  },
+  {
+    "name": "Allianz Arena Tech Meetup",
+    "location": "Munich",
+    "speaker": "Thomas Tuchel",
+    "type": "free",
+    "time": {
+      "start": "2025-07-15T09:30:00",
+      "end": "2025-07-15T12:30:00"
+    }
+  },
+  {
+    "name": "Stamford Bridge Leadership Talk",
+    "location": "London",
+    "speaker": "Steven Gerrard",
+    "type": "paid",
+    "time": {
+      "start": "2025-07-16T11:00:00",
+      "end": "2025-07-16T15:00:00"
+    }
+  },
+  {
+    "name": "Parc des Princes AI Forum",
+    "location": "Paris",
+    "speaker": "Zinédine Zidane",
+    "type": "vip",
+    "time": {
+      "start": "2025-07-17T14:00:00",
+      "end": "2025-07-17T18:00:00"
+    }
+  },
+  {
+    "name": "Anfield Data Science Day",
+    "location": "Liverpool",
+    "speaker": "Jürgen Klopp",
+    "type": "vip",
+    "time": {
+      "start": "2025-07-18T13:00:00",
+      "end": "2025-07-18T16:30:00"
+    }
+  },
+  {
+    "name": "Old Trafford Future Trends",
+    "location": "Manchester",
+    "speaker": "Sir Alex Ferguson",
+    "type": "free",
+    "time": {
+      "start": "2025-07-19T10:30:00",
+      "end": "2025-07-19T14:00:00"
+    }
+  },
+  {
+    "name": "NSK Olimpiyskiy",
+    "location": "Kyiv",
+    "speaker": "Shevchenko",
+    "type": "free",
+    "time": {
+      "start": "2025-07-12T16:30:00",
+      "end": "2025-07-12T19:00:00"
+    }
+  }
+]
