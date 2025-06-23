@@ -1,29 +1,34 @@
 import { FaMapMarkerAlt,FaUserAlt,FaCalendarAlt,FaClock } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-import css from './event.module.css';
+import { formatEventDuration, formatEventStart } from 'utils';
+import {iconSize} from 'constants'
+import {Card, EventTitle, Info, Chip} from './Event.styled'
 
 export const Event = ({ name, location, speaker, type, start, end }) => {
+  const formattedStart = formatEventStart(start);
+  const formattedDuration = formatEventDuration(start,end);
+
   return (
-    <div className={css.event}>
-      <h2 className={css.title}>{name}</h2>
-      <p className={css.info}>
-        <FaMapMarkerAlt className={css.icon} />
+    <Card>
+      <EventTitle>{name}</EventTitle>
+      <Info>
+        <FaMapMarkerAlt size={iconSize.sm} />
         {location}
-      </p>
-      <p className={css.info}>
-        <FaUserAlt className={css.icon} />
+      </Info>
+      <Info>
+        <FaUserAlt size={iconSize.sm}/>
         {speaker}
-      </p>
-      <p className={css.info}>
-        <FaCalendarAlt className={css.icon} />
-        {start}
-      </p>
-      <p className={css.info}>
-        <FaClock className={css.icon} />
-        {end}
-      </p>
-      <span className="chip free|paid|vip">{type}</span>
-    </div>
+      </Info>
+      <Info>
+        <FaCalendarAlt size={iconSize.sm}/>
+        {formattedStart}
+      </Info>
+      <Info>
+        <FaClock size={iconSize.sm}/>
+        {formattedDuration}
+      </Info>
+      <Chip eventType={type}>{type}</Chip>
+    </Card>
   );
 };
 
